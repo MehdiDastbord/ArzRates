@@ -24,10 +24,12 @@ class RatesWidget : GlanceAppWidget() {
                     .fillMaxSize()
                     .padding(14.dp)
             ) {
-                Text("Arz Rates")
+                Text(
+                    text = "Arz Rates"
+                )
 
                 Text(
-                    "Open the app to manage your selected rates."
+                    text = "Open the app to manage your selected rates."
                 )
             }
         }
@@ -36,6 +38,6 @@ class RatesWidget : GlanceAppWidget() {
 
 class RatesWidgetReceiver : GlanceAppWidgetReceiver() {
 
-    override val glanceAppWidget: GlanceAppWidget =
-        RatesWidget()
+    override val glanceAppWidget: GlanceAppWidget
+        get() = RatesWidget()
 }
