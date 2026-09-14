@@ -8,9 +8,7 @@ import androidx.glance.appwidget.GlanceAppWidgetReceiver
 import androidx.glance.appwidget.provideContent
 import androidx.glance.layout.Column
 import androidx.glance.layout.fillMaxSize
-import androidx.glance.layout.padding
 import androidx.glance.text.Text
-import androidx.glance.unit.dp
 
 class RatesWidget : GlanceAppWidget() {
 
@@ -20,9 +18,7 @@ class RatesWidget : GlanceAppWidget() {
     ) {
         provideContent {
             Column(
-                modifier = GlanceModifier
-                    .fillMaxSize()
-                    .padding(14.dp)
+                modifier = GlanceModifier.fillMaxSize()
             ) {
                 Text(
                     text = "Arz Rates"
